@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+    <!-- MENU ENCABEZADO -->
+    <div class="contenedor-header">
+        <header>
+            <div class="logo">
+                <a href="#">s_R</a>
+            </div>
+            <nav id="nav">
+                <ul>
+                    <li><a href="#inicio" onclick="seleccionar()">INICIO</a></li>
+                    <li><a href="#sobremi" onclick="seleccionar()">SOBRE MI</a></li>
+                    <li><a href="#skills" onclick="seleccionar()">SKILLS</a></li>
+                    <li><a href="#curriculum" onclick="seleccionar()">CURRICULUM</a></li>
+                </ul>
+            </nav>
+            <div class="nav-responsive" onclick="mostrarOcultarMenu()">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+            <!-- alerta -->
+            <div id="alertaPersonalizada" class="alerta">
+                <span id="mensajeAlerta"></span>
+            </div>
+            <!-- /alerta -->
+        </header>
+    </div>
+
+    <!-- SECCION INICIO -->
+    <section id="inicio" class="inicio">
+        <div class="contenido-banner">
+            <div class="contenedor-img">
+                <img src="img/hero.jpg" alt="">
+            </div>
+            <h1>Samuel Rubiano</h1>
+            <h2>Desarrollador Software Junior</h2>
+            <div class="redes">
+                <a href="https://github.com/samuelRubianoOrjuela" target="_blank"><i class="fa-brands fa-github"></i></a>
+                <a onclick="copiar(true)"><i class="fa-solid fa-envelope"></i></a>
+                <a onclick="copiar(false)"><i class="fa-brands fa-whatsapp"></i></a>
+                <a href="https://www.linkedin.com/in/samuel-rubiano-orjuela-350b192a5/" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION SOBRE MI -->
+    <section id="sobremi" class="sobremi">
+        <div class="contenido-seccion">
+            <h2>Sobre Mí</h2>
+            <p><span>Hola, soy Samuel Rubiano.</span> Desarrollador de software con experiencia técnica sólida y un compromiso constante con el aprendizaje y el crecimiento. Especializado en diversas tecnologías de programación, disfruto enfrentando desafíos y buscando oportunidades para expandir mis conocimientos y perfeccionar mis habilidades. Mantengo un enfoque activo en la innovación, manteniéndome al día con las últimas tendencias y colaborando eficazmente en equipos dinámicos.</p>
+
+            <div class="fila">
+                <!-- datos personales -->
+                <div class="col">
+                    <h3>Datos Personales</h3>
+                    <ul>
+                        <li>
+                            <strong>Cumpleaños</strong>
+                            07-02-2006
+                        </li>
+                        <li>
+                            <strong>Teléfono</strong>
+                        +57 319 706 5799
+                        </li>
+                        <li>
+                            <strong>Email</strong>
+                            samuelrubiano0702@gmail.com
+                        </li>
+                        <li>
+                            <strong>Ubicación</strong>
+                            Bogotá D.C
+                        </li>
+                        <li>
+                            <strong>Cargo</strong>
+                            <span>FULL STACK</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- intereses -->
+                <div class="col">
+                    <h3>Intereses</h3>
+                    <div class="contenedor-intereses">
+                        <div class="interes">
+                            <i class="fa-solid fa-gamepad"></i>
+                            <span>JUEGOS</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-headphones"></i>
+                            <span>MUSICA</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-plane"></i>
+                            <span>VIAJAR</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-sharp fa-regular fa-futbol"></i>
+                            <span>DEPORTES</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-car"></i>
+                            <span>AUTOS</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-palette"></i>
+                        <span>ARTE</span>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION SKILLS -->
+    <section class="skills" id="skills">
+        <div class="contenido-seccion">
+            <h2>Habilidaddes</h2>
+            <div class="fila">
+                <!-- Technical Skill -->
+                <div class="col">
+                    <h3>Habilidaddes Técnicas</h3>
+                    <div class="skill">
+                        <span>Javascript</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>60%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>HTML & CSS</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>86%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Spring</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>54%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Python</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>85%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>SQL</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>80%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Professional Skills -->
+                <div class="col">
+                    <h3>Habilidaddes Blandas</h3>
+                    <div class="skill">
+                        <span>Comunicación</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>72%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Trabajo en Equipo</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>75%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Creatividad</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>88%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Dedicación</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>69%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Resolución de Conflictos</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>83%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION CURRICULUM -->
+    <section id="curriculum" class="curriculum">
+        <div class="contenido-seccion">
+            <h2>Curriculum</h2>
+            <div class="fila">
+                <div class="col izquierda">
+                    <h3>Educación</h3>
+                    <div class="item izq">
+                        <h4>Desarrollador de Software</h4>
+                        <span class="casa">Campuslands</span>
+                        <span class="fecha">2024</span>
+                        <p>Este programa me permitió aprender diversas tecnologías de software, mejorar mis habilidades en inglés y desarrollar competencias interpersonales fundamentales. Gracias a este enfoque integral, estoy preparado para unirme a equipos de trabajo y enfrentar los desafíos del desarrollo de software con confianza y eficacia.</p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                    <div class="item izq">
+                        <h4>Técnico en Sistemas</h4>
+                        <span class="casa">SENA</span>
+                        <span class="fecha">2022 - 2023</span>
+                        <p>Durante el curso, adquirí habilidades esenciales para brindar soporte básico a empresas, asegurando que sus operaciones diarias se desarrollen sin contratiempos técnicos. Este conocimiento me ha permitido enfrentar y resolver desafíos comunes en entornos tecnológicos, contribuyendo de manera efectiva al funcionamiento eficiente de las organizaciones.</p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col derecha">
+                    <h3>Experiencia de trabajo</h3>
+                    <div class="item der">
+                        <h4>Full Stack Developer</h4>
+                        <span class="casa">Pagina web de gestión de activos</span>
+                        <span class="fecha">Febrero 2024</span>
+                        <p>Un sitio web diseñado para gestionar eficazmente los activos de una empresa, facilitando procesos como la creación, edición, búsqueda y eliminación.</p>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                    <div class="item der">
+                        <h4>Backend Developer</h4>
+                        <span class="casa">Aplicación de agencia de vuelos</span>
+                        <span class="fecha">Junio 2024</span>
+                        <p>Una aplicación diseñada en Java para gestionar de forma integral todas las operaciones de una agencia de vuelos.</p>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- footer -->
+    <footer>
+        <a href="#inicio" class="arriba">
+            <i class="fa-solid fa-angles-up"></i>
+        </a>
+        <div class="redes">
+            <a href="https://github.com/samuelRubianoOrjuela" target="_blank"><i class="fa-brands fa-github"></i></a>
+                <a onclick="copiar(true, false)"><i class="fa-solid fa-envelope"></i></a>
+                <a onclick="copiar(false, false)"><i class="fa-brands fa-whatsapp"></i></a>
+                <a href="https://www.linkedin.com/in/samuel-rubiano-orjuela-350b192a5/" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
